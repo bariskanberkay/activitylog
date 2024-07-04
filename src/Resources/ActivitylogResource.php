@@ -82,7 +82,7 @@ class ActivitylogResource extends Resource
                         TextInput::make('causer_id')
                             ->afterStateHydrated(function ($component, ?Model $record) {
                                 /** @phpstan-ignore-next-line */
-                                return $component->state($record->causer?->name);
+                                return $component->state($record->causer?->firstname);
                             })
                             ->label(__('activitylog::forms.fields.causer.label')),
 
