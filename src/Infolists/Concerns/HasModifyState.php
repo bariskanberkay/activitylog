@@ -23,6 +23,6 @@ trait HasModifyState
 
     private function getCauserName($causer): string
     {
-        return $causer->name ?? $causer->first_name ?? $causer->last_name ?? $causer->username ?? $causer->firstname ?? $causer->lastname  'Unknown';
+        return $causer->name ?? $causer->first_name ?? $causer->last_name ?? $causer->username ?? $causer->firstname ?? $causer->lastname ??  'Unknown';
     }
 }
